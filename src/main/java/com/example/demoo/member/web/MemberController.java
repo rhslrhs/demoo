@@ -19,6 +19,17 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
+    @RequestMapping(value = "/member/join3", method = RequestMethod.GET)
+    public String getMemberJoin3() {
+        return "member/join3";
+    }
+
+    @RequestMapping(value = "/member/join4", method = RequestMethod.GET)
+    public String getMemberJoin4() {
+        return "member/join4";
+    }
+
+
     // CASE.1 - req-form, res-view
     // 'Content-Type: application/x-www-form-urlencoded'으로 보내고, (ex: form-submit)
     // view(jsp)에서 응답 처리
